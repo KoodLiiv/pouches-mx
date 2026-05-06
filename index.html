@@ -304,6 +304,7 @@
       position: relative;
       overflow: hidden;
       cursor: pointer;
+      text-decoration: none;
     }
     .brand-card::before {
       content: '';
@@ -635,7 +636,7 @@
       <p class="section-intro fade-up">Las marcas más populares disponibles ahora mismo en el mercado mexicano.</p>
       <div class="brands-grid fade-up">
 
-        <div class="brand-card">
+        <a href="zyn-mexico.html" class="brand-card">
           <span class="brand-origin">Philip Morris International</span>
           <div class="brand-name">ZYN</div>
           <p class="brand-desc">La marca número uno a nivel mundial. Disponible en sabores como menta, cítrico y café. Niveles de nicotina de 3mg a 6mg.</p>
@@ -645,9 +646,9 @@
             <span class="tag">OXXO</span>
           </div>
           <span class="brand-arrow">↗</span>
-        </div>
+        </a>
 
-        <div class="brand-card">
+        <a href="velo-mexico.html" class="brand-card">
           <span class="brand-origin">British American Tobacco</span>
           <div class="brand-name">VELO</div>
           <p class="brand-desc">De BAT, una de las tabacaleras más grandes del mundo. Formato slim discreto, gran variedad de intensidades y sabores frutales.</p>
@@ -657,7 +658,7 @@
             <span class="tag">7-Eleven</span>
           </div>
           <span class="brand-arrow">↗</span>
-        </div>
+        </a>
 
         <div class="brand-card">
           <span class="brand-origin">Swedish Match</span>
@@ -820,15 +821,6 @@
     }, { threshold: 0.12 });
 
     document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
-
-    // Brand card click (placeholder for future detail pages)
-    document.querySelectorAll('.brand-card').forEach(card => {
-      card.addEventListener('click', () => {
-        const name = card.querySelector('.brand-name').textContent;
-        // Will route to /marcas/[name].html in v2
-        console.log('Navigate to:', name);
-      });
-    });
   </script>
 
 </body>

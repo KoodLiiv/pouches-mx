@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Primary -->
+  <title>Pouches México | Nicotine Pouches – Guía, Marcas y Dónde Comprar</title>
+  <meta name="description" content="La guía definitiva de nicotine pouches en México. Compara marcas como ZYN, Velo y Lyft. Descubre precios, sabores y dónde comprarlos en OXXO, 7-Eleven y más." />
+  <meta name="keywords" content="nicotine pouches mexico, pouches mexico, ZYN mexico, Velo mexico, nicotine pouches oxxo, pouches sin humo, snus mexico" />
+  <meta name="author" content="Pouches.mx" />
+  <link rel="canonical" href="https://pouches.mx/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Pouches México | La Guía Definitiva de Nicotine Pouches" />
+  <meta property="og:description" content="Compara marcas, precios y sabores de nicotine pouches en México. ZYN, Velo, Lyft y más." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://pouches.mx/" />
+  <meta property="og:locale" content="es_MX" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;1,9..144,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ── Variables ── */
+    :root {
+      --black:   #0a0a0a;
+      --white:   #f2efe8;
+      --cream:   #e8e2d4;
+      --accent:  #c8f230;   /* electric lime */
+      --mid:     #1a1a1a;
+      --muted:   #3a3a3a;
+      --border:  #2a2a2a;
+      --font-display: 'Bebas Neue', sans-serif;
+      --font-body:    'Fraunces', Georgia, serif;
+      --font-mono:    'DM Mono', monospace;
+    }
+
+    /* ── Reset ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--black);
+      color: var(--white);
+      font-family: var(--font-body);
+      font-size: 17px;
+      line-height: 1.65;
+      overflow-x: hidden;
+    }
+    a { color: inherit; text-decoration: none; }
+    img { display: block; max-width: 100%; }
+
+    /* ── Noise overlay ── */
+    body::before {
+      content: '';
+      position: fixed; inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 999;
+      opacity: 0.35;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0;
+      z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 1.2rem 2.5rem;
+      border-bottom: 1px solid var(--border);
+      background: rgba(10,10,10,0.92);
+      backdrop-filter: blur(12px);
+    }
+    .nav-logo {
+      font-family: var(--font-display);
+      font-size: 1.6rem;
+      letter-spacing: 0.08em;
+      color: var(--accent);
+    }
+    .nav-logo span { color: var(--white); }
+    .nav-links { display: flex; gap: 2rem; align-items: center; }
+    .nav-links a {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--cream);
+      opacity: 0.7;
+      transition: opacity 0.2s;
+    }
+    .nav-links a:hover { opacity: 1; }
+    .nav-cta {
+      background: var(--accent);
+      color: var(--black) !important;
+      padding: 0.45rem 1.1rem;
+      border-radius: 2px;
+      opacity: 1 !important;
+      font-weight: 500;
+      transition: background 0.2s !important;
+    }
+    .nav-cta:hover { background: #d8ff40 !important; }
+
+    /* ── HERO ── */
+    .hero {
+      min-height: 100vh;
+      display: grid;
+      grid-template-rows: 1fr auto;
+      padding: 0 2.5rem;
+      padding-top: 5rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-bg {
+      position: absolute; inset: 0;
+      background:
+        radial-gradient(ellipse 80% 60% at 70% 40%, rgba(200,242,48,0.06) 0%, transparent 65%),
+        radial-gradient(ellipse 50% 80% at 10% 80%, rgba(200,242,48,0.04) 0%, transparent 60%);
+    }
+    .hero-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      max-width: 1200px;
+      margin: 0 auto;
+      width: 100%;
+      padding: 6rem 0 3rem;
+      position: relative;
+    }
+    .hero-eyebrow {
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1.5rem;
+      display: flex; align-items: center; gap: 0.8rem;
+    }
+    .hero-eyebrow::before {
+      content: '';
+      display: inline-block;
+      width: 2rem; height: 1px;
+      background: var(--accent);
+    }
+    .hero-headline {
+      font-family: var(--font-display);
+      font-size: clamp(4.5rem, 11vw, 10rem);
+      line-height: 0.92;
+      letter-spacing: 0.01em;
+      color: var(--white);
+      margin-bottom: 2rem;
+    }
+    .hero-headline em {
+      font-style: italic;
+      color: var(--accent);
+      font-family: var(--font-body);
+      font-weight: 300;
+      font-size: 0.55em;
+      display: block;
+      letter-spacing: 0.02em;
+    }
+    .hero-sub {
+      font-size: 1.1rem;
+      color: var(--cream);
+      opacity: 0.7;
+      max-width: 520px;
+      margin-bottom: 3rem;
+      font-weight: 300;
+    }
+    .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
+    .btn-primary {
+      background: var(--accent);
+      color: var(--black);
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      padding: 1rem 2.2rem;
+      border-radius: 2px;
+      font-weight: 500;
+      transition: background 0.2s, transform 0.15s;
+      display: inline-block;
+    }
+    .btn-primary:hover { background: #d8ff40; transform: translateY(-1px); }
+    .btn-ghost {
+      border: 1px solid var(--border);
+      color: var(--cream);
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      padding: 1rem 2.2rem;
+      border-radius: 2px;
+      transition: border-color 0.2s, color 0.2s;
+      display: inline-block;
+    }
+    .btn-ghost:hover { border-color: var(--accent); color: var(--accent); }
+
+    .hero-stats {
+      border-top: 1px solid var(--border);
+      padding: 2rem 0;
+      display: flex; gap: 3rem; flex-wrap: wrap;
+      max-width: 1200px; margin: 0 auto; width: 100%;
+      position: relative;
+    }
+    .stat { display: flex; flex-direction: column; gap: 0.3rem; }
+    .stat-num {
+      font-family: var(--font-display);
+      font-size: 2.2rem;
+      color: var(--accent);
+      letter-spacing: 0.05em;
+    }
+    .stat-label {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--cream);
+      opacity: 0.5;
+    }
+
+    /* ── MARQUEE ── */
+    .marquee-wrap {
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      overflow: hidden;
+      padding: 0.9rem 0;
+      background: var(--mid);
+    }
+    .marquee-track {
+      display: flex; gap: 3rem;
+      animation: marquee 22s linear infinite;
+      width: max-content;
+    }
+    .marquee-track:hover { animation-play-state: paused; }
+    .marquee-item {
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--cream);
+      opacity: 0.5;
+      white-space: nowrap;
+      display: flex; align-items: center; gap: 1.5rem;
+    }
+    .marquee-item::after {
+      content: '◆';
+      color: var(--accent);
+      opacity: 1;
+      font-size: 0.5rem;
+    }
+    @keyframes marquee {
+      from { transform: translateX(0); }
+      to   { transform: translateX(-50%); }
+    }
+
+    /* ── SECTIONS shared ── */
+    section { padding: 6rem 2.5rem; }
+    .container { max-width: 1200px; margin: 0 auto; }
+    .section-label {
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1rem;
+      display: flex; align-items: center; gap: 0.8rem;
+    }
+    .section-label::before {
+      content: '';
+      display: inline-block;
+      width: 1.5rem; height: 1px;
+      background: var(--accent);
+    }
+    .section-title {
+      font-family: var(--font-display);
+      font-size: clamp(2.8rem, 5vw, 4.5rem);
+      line-height: 1;
+      letter-spacing: 0.02em;
+      margin-bottom: 1rem;
+    }
+    .section-intro {
+      font-size: 1rem;
+      color: var(--cream);
+      opacity: 0.6;
+      max-width: 480px;
+      font-weight: 300;
+      margin-bottom: 3.5rem;
+    }
+
+    /* ── BRANDS GRID ── */
+    .brands-section { background: var(--black); }
+    .brands-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1px;
+      border: 1px solid var(--border);
+    }
+    .brand-card {
+      background: var(--mid);
+      padding: 2.5rem 2rem;
+      display: flex; flex-direction: column; gap: 1rem;
+      transition: background 0.2s;
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+    }
+    .brand-card::before {
+      content: '';
+      position: absolute; top: 0; left: 0; right: 0;
+      height: 2px;
+      background: var(--accent);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s;
+    }
+    .brand-card:hover { background: #1f1f1f; }
+    .brand-card:hover::before { transform: scaleX(1); }
+    .brand-name {
+      font-family: var(--font-display);
+      font-size: 2.2rem;
+      letter-spacing: 0.05em;
+      color: var(--white);
+    }
+    .brand-origin {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+    .brand-desc {
+      font-size: 0.9rem;
+      color: var(--cream);
+      opacity: 0.6;
+      font-weight: 300;
+      line-height: 1.6;
+    }
+    .brand-tags { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: auto; }
+    .tag {
+      font-family: var(--font-mono);
+      font-size: 0.6rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 0.3rem 0.7rem;
+      border: 1px solid var(--border);
+      border-radius: 1px;
+      color: var(--cream);
+      opacity: 0.5;
+    }
+    .brand-arrow {
+      position: absolute; bottom: 1.5rem; right: 1.5rem;
+      font-size: 1.2rem;
+      color: var(--accent);
+      opacity: 0;
+      transition: opacity 0.2s, transform 0.2s;
+    }
+    .brand-card:hover .brand-arrow { opacity: 1; transform: translate(3px, -3px); }
+
+    /* ── WHERE TO BUY ── */
+    .buy-section { background: var(--mid); }
+    .stores-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+    }
+    .store-card {
+      border: 1px solid var(--border);
+      padding: 2rem;
+      display: flex; flex-direction: column; gap: 0.8rem;
+      transition: border-color 0.2s;
+      border-radius: 2px;
+    }
+    .store-card:hover { border-color: var(--accent); }
+    .store-icon {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+    .store-name {
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      letter-spacing: 0.05em;
+    }
+    .store-desc {
+      font-size: 0.85rem;
+      color: var(--cream);
+      opacity: 0.55;
+      font-weight: 300;
+    }
+    .store-availability {
+      font-family: var(--font-mono);
+      font-size: 0.62rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-top: auto;
+    }
+
+    /* ── GUIDE STRIP ── */
+    .guide-section { background: var(--black); }
+    .guide-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1px;
+      border: 1px solid var(--border);
+    }
+    .guide-card {
+      background: var(--mid);
+      padding: 3rem 2.5rem;
+      display: flex; flex-direction: column; gap: 1rem;
+    }
+    .guide-card:first-child {
+      background: var(--accent);
+      color: var(--black);
+    }
+    .guide-card:first-child .guide-num,
+    .guide-card:first-child .guide-title,
+    .guide-card:first-child .guide-text { color: var(--black); }
+    .guide-num {
+      font-family: var(--font-display);
+      font-size: 4rem;
+      line-height: 1;
+      color: var(--accent);
+      opacity: 0.3;
+    }
+    .guide-card:first-child .guide-num { opacity: 0.2; }
+    .guide-title {
+      font-family: var(--font-display);
+      font-size: 1.8rem;
+      letter-spacing: 0.03em;
+      color: var(--white);
+    }
+    .guide-text {
+      font-size: 0.9rem;
+      color: var(--cream);
+      opacity: 0.65;
+      font-weight: 300;
+    }
+
+    /* ── CTA BAND ── */
+    .cta-band {
+      background: var(--accent);
+      padding: 5rem 2.5rem;
+      text-align: center;
+    }
+    .cta-band .section-label { justify-content: center; color: rgba(0,0,0,0.5); }
+    .cta-band .section-label::before { background: rgba(0,0,0,0.3); }
+    .cta-band .section-title { color: var(--black); }
+    .cta-band p { color: rgba(0,0,0,0.65); max-width: 480px; margin: 1rem auto 2.5rem; }
+    .btn-dark {
+      background: var(--black);
+      color: var(--accent);
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      padding: 1rem 2.5rem;
+      border-radius: 2px;
+      transition: background 0.2s;
+      display: inline-block;
+    }
+    .btn-dark:hover { background: #1a1a1a; }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--black);
+      border-top: 1px solid var(--border);
+      padding: 3rem 2.5rem;
+    }
+    .footer-inner {
+      max-width: 1200px; margin: 0 auto;
+      display: flex; justify-content: space-between; align-items: flex-start;
+      flex-wrap: wrap; gap: 2rem;
+    }
+    .footer-brand .nav-logo { font-size: 1.4rem; margin-bottom: 0.5rem; }
+    .footer-brand p {
+      font-size: 0.8rem;
+      color: var(--cream);
+      opacity: 0.35;
+      max-width: 260px;
+      font-weight: 300;
+    }
+    .footer-links { display: flex; gap: 3rem; flex-wrap: wrap; }
+    .footer-col { display: flex; flex-direction: column; gap: 0.8rem; }
+    .footer-col-title {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--cream);
+      opacity: 0.35;
+      margin-bottom: 0.3rem;
+    }
+    .footer-col a {
+      font-size: 0.85rem;
+      color: var(--cream);
+      opacity: 0.55;
+      transition: opacity 0.2s;
+    }
+    .footer-col a:hover { opacity: 1; }
+    .footer-bottom {
+      max-width: 1200px; margin: 2.5rem auto 0;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+      display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem;
+    }
+    .footer-bottom p {
+      font-family: var(--font-mono);
+      font-size: 0.62rem;
+      letter-spacing: 0.1em;
+      color: var(--cream);
+      opacity: 0.25;
+      text-transform: uppercase;
+    }
+    .disclaimer {
+      font-size: 0.72rem;
+      color: var(--cream);
+      opacity: 0.25;
+      font-weight: 300;
+      max-width: 500px;
+      text-align: right;
+    }
+
+    /* ── ANIMATIONS ── */
+    .fade-up {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .fade-up.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 768px) {
+      nav { padding: 1rem 1.2rem; }
+      .nav-links { display: none; }
+      section { padding: 4rem 1.2rem; }
+      .hero { padding: 0 1.2rem; padding-top: 4.5rem; }
+      .hero-stats { gap: 1.5rem; }
+      .guide-grid { grid-template-columns: 1fr; }
+      .footer-inner { flex-direction: column; }
+      .footer-bottom { flex-direction: column; }
+      .disclaimer { text-align: left; max-width: 100%; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-logo">POUCHES<span>.MX</span></div>
+    <div class="nav-links">
+      <a href="#marcas">Marcas</a>
+      <a href="#donde-comprar">Dónde Comprar</a>
+      <a href="#guia">Guía</a>
+      <a href="#guia" class="nav-cta">Empezar →</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">México · Guía Definitiva · 2025</p>
+      <h1 class="hero-headline">
+        NICOTINE<br>POUCHES
+        <em>en México</em>
+      </h1>
+      <p class="hero-sub">
+        Todo lo que necesitas saber sobre las bolsitas de nicotina. Comparativas de marcas, precios actuales y dónde encontrarlas en OXXO, 7-Eleven y más.
+      </p>
+      <div class="hero-actions">
+        <a href="#marcas" class="btn-primary">Ver Marcas →</a>
+        <a href="#guia" class="btn-ghost">Guía para Principiantes</a>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="stat">
+        <span class="stat-num">10+</span>
+        <span class="stat-label">Marcas en MX</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">0</span>
+        <span class="stat-label">Humo · Sin Tabaco</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">OXXO</span>
+        <span class="stat-label">Disponible ahora</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">6mg+</span>
+        <span class="stat-label">Niveles de nicotina</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-wrap">
+    <div class="marquee-track">
+      <span class="marquee-item">ZYN México</span>
+      <span class="marquee-item">Velo Pouches</span>
+      <span class="marquee-item">Lyft Nicotine</span>
+      <span class="marquee-item">Sin Humo</span>
+      <span class="marquee-item">Sin Tabaco</span>
+      <span class="marquee-item">OXXO · 7-Eleven</span>
+      <span class="marquee-item">ZYN México</span>
+      <span class="marquee-item">Velo Pouches</span>
+      <span class="marquee-item">Lyft Nicotine</span>
+      <span class="marquee-item">Sin Humo</span>
+      <span class="marquee-item">Sin Tabaco</span>
+      <span class="marquee-item">OXXO · 7-Eleven</span>
+      <!-- duplicate for seamless loop -->
+      <span class="marquee-item">ZYN México</span>
+      <span class="marquee-item">Velo Pouches</span>
+      <span class="marquee-item">Lyft Nicotine</span>
+      <span class="marquee-item">Sin Humo</span>
+      <span class="marquee-item">Sin Tabaco</span>
+      <span class="marquee-item">OXXO · 7-Eleven</span>
+      <span class="marquee-item">ZYN México</span>
+      <span class="marquee-item">Velo Pouches</span>
+      <span class="marquee-item">Lyft Nicotine</span>
+      <span class="marquee-item">Sin Humo</span>
+      <span class="marquee-item">Sin Tabaco</span>
+      <span class="marquee-item">OXXO · 7-Eleven</span>
+    </div>
+  </div>
+
+  <!-- BRANDS -->
+  <section class="brands-section" id="marcas">
+    <div class="container">
+      <p class="section-label fade-up">Marcas Principales</p>
+      <h2 class="section-title fade-up">Las Marcas<br>en México</h2>
+      <p class="section-intro fade-up">Las marcas más populares disponibles ahora mismo en el mercado mexicano.</p>
+      <div class="brands-grid fade-up">
+
+        <div class="brand-card">
+          <span class="brand-origin">Philip Morris International</span>
+          <div class="brand-name">ZYN</div>
+          <p class="brand-desc">La marca número uno a nivel mundial. Disponible en sabores como menta, cítrico y café. Niveles de nicotina de 3mg a 6mg.</p>
+          <div class="brand-tags">
+            <span class="tag">3mg · 6mg</span>
+            <span class="tag">Menta · Cítrico</span>
+            <span class="tag">OXXO</span>
+          </div>
+          <span class="brand-arrow">↗</span>
+        </div>
+
+        <div class="brand-card">
+          <span class="brand-origin">British American Tobacco</span>
+          <div class="brand-name">VELO</div>
+          <p class="brand-desc">De BAT, una de las tabacaleras más grandes del mundo. Formato slim discreto, gran variedad de intensidades y sabores frutales.</p>
+          <div class="brand-tags">
+            <span class="tag">4mg · 7mg</span>
+            <span class="tag">Frutal · Menta</span>
+            <span class="tag">7-Eleven</span>
+          </div>
+          <span class="brand-arrow">↗</span>
+        </div>
+
+        <div class="brand-card">
+          <span class="brand-origin">Swedish Match</span>
+          <div class="brand-name">LYFT</div>
+          <p class="brand-desc">Origen escandinavo con tradición snus. Fuerte presencia en mercados emergentes. Sabores únicos como eucalipto y bergamota.</p>
+          <div class="brand-tags">
+            <span class="tag">4mg · 8mg</span>
+            <span class="tag">Eucalipto · Baya</span>
+            <span class="tag">Especialistas</span>
+          </div>
+          <span class="brand-arrow">↗</span>
+        </div>
+
+        <div class="brand-card">
+          <span class="brand-origin">Japan Tobacco International</span>
+          <div class="brand-name">NORDIC SPIRIT</div>
+          <p class="brand-desc">Diseño minimalista escandinavo. Sabores naturales suaves. Ideal para quienes buscan una experiencia más delicada y discreta.</p>
+          <div class="brand-tags">
+            <span class="tag">6mg · 9mg</span>
+            <span class="tag">Bergamota · Menta</span>
+            <span class="tag">Online</span>
+          </div>
+          <span class="brand-arrow">↗</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- WHERE TO BUY -->
+  <section class="buy-section" id="donde-comprar">
+    <div class="container">
+      <p class="section-label fade-up">Disponibilidad</p>
+      <h2 class="section-title fade-up">Dónde Comprar<br>en México</h2>
+      <p class="section-intro fade-up">Ya no necesitas importarlos. Encuentra nicotine pouches en tiendas de conveniencia cerca de ti.</p>
+      <div class="stores-grid fade-up">
+
+        <div class="store-card">
+          <div class="store-icon">🏪</div>
+          <div class="store-name">OXXO</div>
+          <p class="store-desc">La cadena de conveniencia más grande de México ya cuenta con ZYN y otras marcas en sucursales seleccionadas.</p>
+          <span class="store-availability">↑ Disponibilidad creciente</span>
+        </div>
+
+        <div class="store-card">
+          <div class="store-icon">🏬</div>
+          <div class="store-name">7-Eleven</div>
+          <p class="store-desc">Velo y otras marcas disponibles en tiendas 7-Eleven de ciudades principales como CDMX, Monterrey y Guadalajara.</p>
+          <span class="store-availability">↑ Ciudades principales</span>
+        </div>
+
+        <div class="store-card">
+          <div class="store-icon">🛒</div>
+          <div class="store-name">Farmacias</div>
+          <p class="store-desc">Algunas farmacias de cadena comienzan a incluir productos de nicotina sin humo en su surtido habitual.</p>
+          <span class="store-availability">→ En expansión</span>
+        </div>
+
+        <div class="store-card">
+          <div class="store-icon">📦</div>
+          <div class="store-name">Online</div>
+          <p class="store-desc">Mercado Libre y tiendas especializadas ofrecen la mayor variedad de marcas, sabores e intensidades con envío a todo México.</p>
+          <span class="store-availability">✓ Mayor variedad</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- GUIDE -->
+  <section class="guide-section" id="guia">
+    <div class="container">
+      <p class="section-label fade-up">Guía Rápida</p>
+      <h2 class="section-title fade-up">¿Qué son los<br>Nicotine Pouches?</h2>
+      <p class="section-intro fade-up">Todo lo que necesitas saber antes de empezar.</p>
+      <div class="guide-grid fade-up">
+
+        <div class="guide-card">
+          <div class="guide-num">01</div>
+          <div class="guide-title">Sin Humo, Sin Tabaco</div>
+          <p class="guide-text">Los nicotine pouches son bolsitas pequeñas que se colocan debajo del labio superior. No requieren encender nada, no producen humo y no contienen hoja de tabaco. Solo nicotina, fibra vegetal y aromatizantes.</p>
+        </div>
+
+        <div class="guide-card">
+          <div class="guide-num">02</div>
+          <div class="guide-title">¿Cómo se usan?</div>
+          <p class="guide-text">Coloca una bolsita entre el labio y la encía. La sensación dura entre 20 y 45 minutos. Disponibles en distintos niveles de nicotina: desde 2mg (suave) hasta 12mg+ (fuerte). Perfectos para lugares donde no se puede fumar.</p>
+        </div>
+
+        <div class="guide-card">
+          <div class="guide-num">03</div>
+          <div class="guide-title">Elegir la Marca</div>
+          <p class="guide-text">ZYN es ideal para principiantes por su suavidad. Velo ofrece mayor variedad de sabores. Lyft es preferido por usuarios con más experiencia. Lo mejor es probar distintas marcas hasta encontrar la favorita.</p>
+        </div>
+
+        <div class="guide-card">
+          <div class="guide-num">04</div>
+          <div class="guide-title">Precio en México</div>
+          <p class="guide-text">Una lata con 20 bolsitas cuesta aproximadamente entre $80 y $150 MXN dependiendo de la marca y el punto de venta. Online suelen encontrarse mejores precios por volumen.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BAND -->
+  <div class="cta-band">
+    <div class="container">
+      <p class="section-label">Próximamente</p>
+      <h2 class="section-title">Comparativas<br>Detalladas</h2>
+      <p>Estamos preparando reseñas completas de cada marca con puntuaciones, comparativas de sabor y las mejores ofertas disponibles en México.</p>
+      <a href="mailto:hola@pouches.mx" class="btn-dark">Notifícame →</a>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="nav-logo">POUCHES<span>.MX</span></div>
+        <p>La referencia en nicotine pouches para el mercado mexicano.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <span class="footer-col-title">Marcas</span>
+          <a href="#marcas">ZYN México</a>
+          <a href="#marcas">Velo México</a>
+          <a href="#marcas">Lyft México</a>
+          <a href="#marcas">Nordic Spirit</a>
+        </div>
+        <div class="footer-col">
+          <span class="footer-col-title">Info</span>
+          <a href="#donde-comprar">Dónde Comprar</a>
+          <a href="#guia">Guía Principiantes</a>
+          <a href="#guia">Precios MX</a>
+          <a href="mailto:hola@pouches.mx">Contacto</a>
+        </div>
+        <div class="footer-col">
+          <span class="footer-col-title">Legal</span>
+          <a href="#">Aviso de Privacidad</a>
+          <a href="#">Términos de Uso</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Pouches.mx — Todos los derechos reservados</p>
+      <p class="disclaimer">Producto para mayores de 18 años. Contiene nicotina, sustancia altamente adictiva. Pouches.mx es un sitio informativo independiente.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Scroll reveal
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => entry.target.classList.add('visible'), i * 80);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+    // Brand card click (placeholder for future detail pages)
+    document.querySelectorAll('.brand-card').forEach(card => {
+      card.addEventListener('click', () => {
+        const name = card.querySelector('.brand-name').textContent;
+        // Will route to /marcas/[name].html in v2
+        console.log('Navigate to:', name);
+      });
+    });
+  </script>
+
+</body>
+</html>

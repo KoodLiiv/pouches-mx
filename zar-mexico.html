@@ -185,6 +185,15 @@
 
     .fade-up{opacity:0;transform:translateY(20px);transition:opacity .6s ease,transform .6s ease}.fade-up.visible{opacity:1;transform:translateY(0)}
 
+    /* PROMO CODE BLOCK */
+    .promo-block{background:#111111;border:1px solid #b5d130;border-radius:4px;padding:2.5rem 2rem;margin:3rem 0;display:flex;flex-direction:column;align-items:center;text-align:center;gap:1.2rem}
+    .promo-headline{font-family:var(--font-display);font-size:clamp(2rem,4vw,2.8rem);letter-spacing:.03em;color:#f2efe8;line-height:1}
+    .promo-sub{font-family:var(--font-mono);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:#f2efe8;opacity:.55}
+    .promo-code-box{border:2px solid #b5d130;border-radius:4px;padding:.8rem 2rem;display:inline-block}
+    .promo-code{font-family:var(--font-mono);font-size:2rem;font-weight:500;letter-spacing:.25em;color:#b5d130}
+    .promo-note{font-family:var(--font-mono);font-size:.62rem;letter-spacing:.08em;color:#f2efe8;opacity:.35}
+    .promo-btn{display:inline-block;background:#b5d130;color:#111111;font-family:var(--font-mono);font-size:.75rem;letter-spacing:.15em;text-transform:uppercase;padding:1rem 2rem;border-radius:2px;font-weight:700;transition:filter .2s,transform .15s;margin-top:.4rem}.promo-btn:hover{filter:brightness(1.1);transform:translateY(-1px)}
+
     @media(max-width:900px){nav{padding:1rem 1.2rem}.nav-links{display:none}.hero,.content-wrap,.breadcrumb{padding-left:1.2rem;padding-right:1.2rem}.hero{grid-template-columns:1fr}.buy-box{position:static}.content-wrap{grid-template-columns:1fr}.sidebar-sticky{position:static}.pros-cons{grid-template-columns:1fr}.vs-header,.vs-row{grid-template-columns:1fr 1fr 1fr}.vs-header .vs-cell:last-child,.vs-row .vs-cell:last-child{display:none}.dura-compare{grid-template-columns:1fr}.strength-grid{grid-template-columns:repeat(3,1fr)}.nic-free-box{grid-template-columns:1fr}}
   </style>
 </head>
@@ -570,6 +579,16 @@
             </ul>
           </div>
         </div>
+      </div>
+
+      <div class="promo-block fade-up">
+        <div class="promo-headline">Prueba ZAR por $1 USD</div>
+        <div class="promo-sub">Usa el código al momento de pagar en la tienda oficial</div>
+        <div class="promo-code-box">
+          <div class="promo-code">TRYZAR</div>
+        </div>
+        <div class="promo-note">Solo para nuevos clientes. Oferta por tiempo limitado.</div>
+        <a href="http://www.awin1.com/cread.php?awinmid=114452&awinaffid=2888297" class="promo-btn" target="_blank" rel="noopener sponsored">Comprar ZAR AirPouch →</a>
       </div>
 
       <div class="section fade-up" id="veredicto">

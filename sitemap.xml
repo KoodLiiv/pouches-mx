@@ -3,7 +3,7 @@
 
   <!-- Homepage -->
   <url>
-    <loc>https://pouches.mx/</loc>
+    <loc>https://www.pouches.mx/</loc>
     <lastmod>2026-05-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -11,28 +11,28 @@
 
   <!-- Brand Reviews -->
   <url>
-    <loc>https://pouches.mx/zyn-mexico</loc>
+    <loc>https://www.pouches.mx/zyn-mexico</loc>
     <lastmod>2026-05-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://pouches.mx/velo-mexico</loc>
+    <loc>https://www.pouches.mx/velo-mexico</loc>
     <lastmod>2026-05-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://pouches.mx/grant-mexico</loc>
+    <loc>https://www.pouches.mx/grant-mexico</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://pouches.mx/zar-mexico</loc>
+    <loc>https://www.pouches.mx/zar-mexico</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -40,14 +40,14 @@
 
   <!-- Guides -->
   <url>
-    <loc>https://pouches.mx/donde-comprar</loc>
+    <loc>https://www.pouches.mx/donde-comprar</loc>
     <lastmod>2026-05-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://pouches.mx/guia-principiantes</loc>
+    <loc>https://www.pouches.mx/guia-principiantes</loc>
     <lastmod>2026-05-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -55,21 +55,21 @@
 
   <!-- Blog -->
   <url>
-    <loc>https://pouches.mx/blog/</loc>
+    <loc>https://www.pouches.mx/blog/</loc>
     <lastmod>2026-05-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://pouches.mx/blog/mejores-2026</loc>
+    <loc>https://www.pouches.mx/blog/mejores-2026</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
 
   <url>
-    <loc>https://pouches.mx/blog/zyn-vs-velo</loc>
+    <loc>https://www.pouches.mx/blog/zyn-vs-velo</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
@@ -77,14 +77,14 @@
 
   <!-- Legal -->
   <url>
-    <loc>https://pouches.mx/aviso-privacidad</loc>
+    <loc>https://www.pouches.mx/aviso-privacidad</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
 
   <url>
-    <loc>https://pouches.mx/terminos-uso</loc>
+    <loc>https://www.pouches.mx/terminos-uso</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>

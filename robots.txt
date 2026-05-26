@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://pouches.mx/sitemap.xml
+Sitemap: https://www.pouches.mx/sitemap.xml

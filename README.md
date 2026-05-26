@@ -45,10 +45,9 @@ Deployed on **Vercel** with configuration in `vercel.json`
 
 ## Built With
 
-- HTML5
-- CSS3
-- JavaScript
-- Google Analytics & Tag Manager
+- HTML5 (single-file pages with inline CSS and JavaScript)
+- Google Analytics & Google Tag Manager
+- Vercel (hosting)
 
 ---
 

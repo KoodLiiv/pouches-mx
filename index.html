@@ -313,6 +313,23 @@
       gap: 1px;
       border: 1px solid var(--border);
     }
+    .secondary-grid {
+      display: flex;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+    .alt-card {
+      background: var(--mid);
+      padding: 2.5rem 2rem;
+      display: flex; flex-direction: column; gap: 1rem;
+      transition: background 0.2s;
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+      text-decoration: none;
+      width: min(720px, 100%);
+      border: 1px solid var(--border);
+    }
     .brand-card {
       background: var(--mid);
       padding: 2.5rem 2rem;
@@ -577,7 +594,7 @@
       <a href="#marcas">Marcas</a>
       <a href="donde-comprar.html">Dónde Comprar</a>
       <a href="guia-principiantes.html">Guía</a>
-      <a href="blog/">Blog</a>
+      <a href="blog/index.html">Blog</a>
       <a href="guia-principiantes.html" class="nav-cta">Empezar →</a>
     </div>
   </nav>
@@ -710,6 +727,27 @@
     </div>
   </section>
 
+  <section class="brands-section alt-section">
+    <div class="container">
+      <p class="section-label fade-up">Alternativas</p>
+      <h2 class="section-title fade-up">Más opciones<br>en México</h2>
+      <p class="section-intro fade-up">NixGo es una marca mexicana de gomas de nicotina que también vale la pena revisar si buscas una alternativa distinta a los pouches secos.</p>
+      <div class="secondary-grid fade-up">
+        <a href="nixgo-mexico.html" class="alt-card">
+          <span class="brand-origin">Marca mexicana · Gomas de nicotina</span>
+          <div class="brand-name">NIXGO</div>
+          <p class="brand-desc">Una alternativa diferente al formato de pouch que se enfoca en una experiencia más suave y cómoda para quienes buscan otra forma de consumir nicotina.</p>
+          <div class="brand-tags">
+            <span class="tag">2mg · 3.5mg</span>
+            <span class="tag">Sabor · Suave</span>
+            <span class="tag">Todo México</span>
+          </div>
+          <span class="brand-arrow">↗</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
   <!-- WHERE TO BUY -->
   <section class="buy-section" id="donde-comprar">
     <div class="container">
@@ -800,28 +838,28 @@
   <footer>
     <div class="footer-inner">
       <div class="footer-brand">
-        <a href="/" class="nav-logo">POUCHES<span>.MX</span></a>
+        <a href="index.html" class="nav-logo">POUCHES<span>.MX</span></a>
         <p>La referencia en nicotine pouches para el mercado mexicano.</p>
       </div>
       <div class="footer-links">
         <div class="footer-col">
           <span class="footer-col-title">Marcas</span>
-          <a href="/zyn-mexico.html">ZYN México</a>
-          <a href="/velo-mexico.html">Velo México</a>
-          <a href="/grant-mexico.html">Grant México</a>
-          <a href="/zar-mexico.html">ZAR México</a>
+          <a href="zyn-mexico.html">ZYN México</a>
+          <a href="velo-mexico.html">Velo México</a>
+          <a href="grant-mexico.html">Grant México</a>
+          <a href="zar-mexico.html">ZAR México</a>
         </div>
         <div class="footer-col">
           <span class="footer-col-title">Info</span>
-          <a href="/donde-comprar.html">Dónde Comprar</a>
-          <a href="/guia-principiantes.html">Guía Principiantes</a>
-          <a href="/guia-principiantes.html">Precios MX</a>
+          <a href="donde-comprar.html">Dónde Comprar</a>
+          <a href="guia-principiantes.html">Guía Principiantes</a>
+          <a href="guia-principiantes.html">Precios MX</a>
           <a href="mailto:hello@pouches.mx">Contacto</a>
         </div>
         <div class="footer-col">
           <span class="footer-col-title">Legal</span>
-          <a href="/aviso-privacidad.html">Aviso de Privacidad</a>
-          <a href="/terminos-uso.html">Términos de Uso</a>
+          <a href="aviso-privacidad.html">Aviso de Privacidad</a>
+          <a href="terminos-uso.html">Términos de Uso</a>
         </div>
       </div>
     </div>
